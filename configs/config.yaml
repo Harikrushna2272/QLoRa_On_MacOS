@@ -1,0 +1,32 @@
+model:
+  name: "meta-llama/Llama-2-8b"
+  max_length: 512
+  load_in_4bit: true
+  device: "mps"  # for MacOS
+
+lora:
+  r: 8
+  alpha: 32
+  dropout: 0.05
+  target_modules: ["q_proj", "k_proj", "v_proj", "o_proj"]
+  bias: "none"
+  task_type: "CAUSAL_LM"
+
+training:
+  output_dir: "checkpoints/financial_model"
+  num_epochs: 3
+  batch_size: 1
+  gradient_accumulation_steps: 16
+  learning_rate: 2e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.03
+  eval_steps: 100
+  save_steps: 100
+  max_grad_norm: 0.3
+  logging_steps: 10
+
+data:
+  pdf_path: "data/financial_shenanigans.pdf"
+  train_test_split: 0.9
+  chunk_size: 512
+  overlap: 50

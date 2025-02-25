@@ -1,0 +1,39 @@
+model_configs:
+  llama2_8b:
+    name: "meta-llama/Llama-2-8b"
+    max_length: 512
+    temperature: 0.3
+    top_p: 0.9
+    repetition_penalty: 1.2
+    prompt_template: |
+      ### Instruction: Analyze this financial text for potential shenanigans and fraudulent activities.
+      ### Input: {text}
+      ### Response: Let's analyze this financial text for potential irregularities:
+
+  llama2_13b:
+    name: "meta-llama/Llama-2-13b"
+    max_length: 768
+    temperature: 0.2
+    top_p: 0.95
+    repetition_penalty: 1.1
+    prompt_template: |
+      ### Instruction: Provide a detailed analysis of potential financial shenanigans in the following text.
+      ### Input: {text}
+      ### Response: Here's a detailed analysis of potential financial irregularities:
+
+inference:
+  batch_size: 1
+  max_new_tokens: 512
+  num_beams: 1
+  early_stopping: true
+
+evaluation:
+  metrics:
+    - precision
+    - recall
+    - f1_score
+    - confidence
+    - analysis_quality
+  thresholds:
+    fraud_detection: 0.5
+    quality_score: 0.7

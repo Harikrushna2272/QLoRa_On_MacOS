@@ -1,17 +1,2 @@
-financial_qlora/
-├── src/
-│   ├── __init__.py
-│   ├── model.py
-│   ├── trainer.py
-│   ├── data_processor.py
-│   └── utils.py
-├── scripts/
-│   ├── train.py
-│   ├── inference.py
-│   └── run_analysis.py
-├── configs/
-│   └── config.yaml
-├── data/
-│   └── financial_shenanigans.pdf
-└── requirements.txt
-# QLoRa_On_MacOS
+## QLoRA on MacOS – Fine-Tuning Large Language Models (LLMs)
+🚀 QLoRA (Quantized Low-Rank Adaptation) enables efficient fine-tuning of large language models (LLMs) on consumer-grade hardware. This repository provides a streamlined setup specifically for MacOS users.

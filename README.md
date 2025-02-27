@@ -1,5 +1,5 @@
 ## QLoRA on MacOS – Fine-Tuning Large Language Models (LLMs)
-🚀 QLoRA (Quantized Low-Rank Adaptation) enables efficient fine-tuning of large language models (LLMs) on consumer-grade hardware. This repository provides a streamlined setup specifically for MacOS users.
+🚀 QLoRA (Quantized Low-Rank Adaptation) enables efficient fine-tuning of large language models (LLMs) on Financial Shenanigans. This repository provides a streamlined setup specifically for MacOS users for fiancial fraud detection in financial reports.
 
 ## 📌 Features
 ✅ Fine-tune LLMs on MacOS using QLoRA

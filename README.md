@@ -1,4 +1,4 @@
-## QLoRA on MacOS – Fine-Tuning Large Language Models (LLMs)
+## Financial Fraud Detection with QLoRA on MacOS (LLMs)
 🚀 QLoRA (Quantized Low-Rank Adaptation) enables efficient fine-tuning of large language models (LLMs) on Financial Shenanigans. This repository provides a streamlined setup specifically for MacOS users for fiancial fraud detection in financial reports.
 
 ## 📌 Features
